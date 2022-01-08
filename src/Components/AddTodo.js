@@ -1,5 +1,6 @@
 import React from 'react'
 import "../Assets/Scss/AddTodo.scss"
+
 export const AddTodo = ({
   newTodo,
   onSubmitTodo
@@ -25,7 +26,7 @@ newDec
             <button onClick={(e)=>{onSubmitTodo(e)}}>   
                 save
             </button>   
-
+         
         </div>
     )
 }

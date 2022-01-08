@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
 import "../Assets/Scss/ListTodo.scss";
+import SimpleModal from "./SimpleModal";
 
 export const ListTodo = ({
   data,
@@ -39,13 +40,16 @@ export const ListTodo = ({
               }}
             ></input>
           ) : (
-            <div  className="titleData"  onClick={() => {
-              showDetail(Dataku.id);
-            }}
-          key={Dataku.id}>{Dataku.title}</div>
+
+            <SimpleModal 
+            title ={Dataku.title}
+            data={Dataku.description}/>
+
+        
           )}
           <br />
           {showDataini[index] === true ? <div>{Dataku.description}</div> : ""}
+          
           <br />
           <div className="icons">
             <button
