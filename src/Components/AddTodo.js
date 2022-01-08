@@ -9,6 +9,7 @@ newDec
 }) => {
     return (
         <div className='inpuTodo'>
+            <h1>Add New Todo  :</h1>
             <input
             value={ValueTodo}
             onChange={(e)=>{newTodo(e)}}    

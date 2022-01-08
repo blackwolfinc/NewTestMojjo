@@ -73,14 +73,7 @@ export const ListTodo = ({
                 Finish
               </button>
             ) : (
-              <button
-                onClick={() => {
-                  FinisTodo(Dataku.id);
-                }}
-                disabled
-              >
-                Finish
-              </button>
+             ""
             )}
           </div>
         </div>

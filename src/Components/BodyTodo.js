@@ -126,8 +126,9 @@ export const BodyTodo = (props) => {
 
   return (
     <div className="center">
-    
+  
       <div className="bodyStyle">
+          
       <AddTodo
         newTodo={handleChangeNewTodo}
         newDec={handleChangeNewDec}
