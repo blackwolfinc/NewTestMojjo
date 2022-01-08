@@ -18,16 +18,10 @@ export const ListTodo = ({
   let inputToggle = EditView;
   let DataSort2 = DataSort;
 
-  const handleSort = (Dataku) => {
-    const sorted = [Dataku].sort((a, b) =>
-      a.createdAt.localeCompare(b.createdAt)
-    );
-    // console.log(sorted)
-  };
+ 
 
   return data.map((Dataku, index) => (
     <div >
-      {handleSort(Dataku)}
 
       {Dataku.status === DataSort2 ? (
         <div
@@ -61,13 +55,14 @@ export const ListTodo = ({
             >
               {inputToggle[index] ? "Save" : "Edit"}{" "}
             </button>
-            <button
+            {Dataku.status ===0 ?   <button
               onClick={() => {
                 deleteFunction(Dataku.id);
               }}
             >
               Delete
-            </button>
+            </button>:""}
+          
 
             {Dataku.status === 0 ? (
               <button

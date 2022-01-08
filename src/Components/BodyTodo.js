@@ -112,6 +112,18 @@ export const BodyTodo = (props) => {
     setValueDec("")
     setValueTodo("")
   };
+
+
+  const Checkall=()=>{
+    bigData.map((result , index)=>{
+        let oldData = [...bigData];
+
+        oldData[index ].status =1
+        setbigData(oldData);
+    })
+
+  }
+
   return (
     <div className="center">
     
@@ -126,7 +138,9 @@ export const BodyTodo = (props) => {
       <div className="continer">
           <div className="thisList">
           <div className="row">
-          <h1>Todo </h1>
+          <h1>Todo  <button onClick={(e)=>{Checkall(e)}}>Check all</button> </h1>
+          
+
           <ListTodo
             data={bigData}
             DataSort={0}
