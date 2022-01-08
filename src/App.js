@@ -3,7 +3,8 @@ import json from "./Assets/Data.json"
 import { BodyTodo } from './Components/BodyTodo'
 import "./Assets/Scss/App.scss"
 export const App = () => {
-  
+    // Jika Di beri Jam Kerja lebih bakal lebih baik lagi 
+    // Belum Sempet Implement Redux karena waktu 
     const [dataJson, setDataJson] = useState(json)
 
     useEffect(() => {
@@ -31,12 +32,10 @@ export const App = () => {
 
     }
 
-
   return (
     <div>
       <BodyTodo 
       data={dataJson}
-  
       />
     </div>
   )
