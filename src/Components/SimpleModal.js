@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
-
+import "../Assets/Scss/SimpleModal.scss"
 function rand() {
   return Math.round(Math.random() * 20) - 10;
 }
@@ -25,6 +25,8 @@ const useStyles = makeStyles((theme) => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
+    borderRadius: '12px ',
+    boxShadow : '22px 22px 44px #c9c9c9, -22px -22px 44px #ffffff;'
   },
 }));
 
@@ -54,7 +56,7 @@ export default function SimpleModal(props) {
 
   return (
     <div>
-      <p type="button" onClick={handleOpen}>
+      <p className='modalTitle' type="button" onClick={handleOpen}>
       {props.title}
       </p>
       <Modal

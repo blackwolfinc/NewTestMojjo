@@ -1,0 +1,6 @@
+.modalTitle:hover{
+    transform: scale(1.05);
+    margin-left: 2rem;
+    color: green;
+    transition: 800ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}

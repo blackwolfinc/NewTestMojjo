@@ -42,6 +42,7 @@ export const ListTodo = ({
           ) : (
 
             <SimpleModal 
+            
             title ={Dataku.title}
             data={Dataku.description}/>
 
