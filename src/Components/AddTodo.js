@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "../Assets/Scss/AddTodo.scss"
 export const AddTodo = ({
   newTodo,
   onSubmitTodo
@@ -8,7 +8,7 @@ ValueDec,
 newDec
 }) => {
     return (
-        <div>
+        <div className='inpuTodo'>
             <input
             value={ValueTodo}
             onChange={(e)=>{newTodo(e)}}    
@@ -24,8 +24,6 @@ newDec
             <button onClick={(e)=>{onSubmitTodo(e)}}>   
                 save
             </button>   
-
-
 
         </div>
     )

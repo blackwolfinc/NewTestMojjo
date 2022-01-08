@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Modal from "@material-ui/core/Modal";
-import "../Assets/Scss/BodyList.scss";
+import "../Assets/Scss/ListTodo.scss";
 
 export const ListTodo = ({
   data,
@@ -26,27 +26,29 @@ export const ListTodo = ({
   };
 
   return data.map((Dataku, index) => (
-    <>
+    <div >
       {handleSort(Dataku)}
 
       {Dataku.status === DataSort2 ? (
         <div
-          onClick={() => {
-            showDetail(Dataku.id);
-          }}
-          className={"Data"}
+        
+          className="ListSave"
           key={index}
         >
           {inputToggle[index] ? (
             <input
               id={Dataku.id}
-              placeholder={Dataku.data}
+              required
+              placeholder={Dataku.title}
               onChange={(e) => {
                 onChangeTitile(e);
               }}
             ></input>
           ) : (
-            <div key={Dataku.id}>{Dataku.title}</div>
+            <div  className="titleData"  onClick={() => {
+              showDetail(Dataku.id);
+            }}
+          key={Dataku.id}>{Dataku.title}</div>
           )}
           <br />
           {showDataini[index] === true ? <div>{Dataku.description}</div> : ""}
@@ -90,6 +92,6 @@ export const ListTodo = ({
       ) : (
         ""
       )}
-    </>
+    </div>
   ));
 };

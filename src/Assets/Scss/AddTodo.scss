@@ -1,0 +1,21 @@
+.inpuTodo{
+    display: flex;
+    justify-content: center;
+    margin: 0rem;
+    align-items: center;
+
+    input {
+        padding: 1rem ;
+        margin: 1rem;
+        border-radius: 12px;
+        border: 1px solid gray ;
+    }
+    button {
+        padding: 1rem 2rem !important ;
+        border-radius: 12px;
+        border: 1px solid gray ;
+        margin: 0rem;
+        height: fit-content !important;
+    }
+
+}

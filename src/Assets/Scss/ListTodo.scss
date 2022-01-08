@@ -1,0 +1,32 @@
+.ListSave{
+    display: flex;
+    flex-direction: column;
+    // background-color: rebeccapurple;
+    border: 1px solid gray;
+        border-radius: 12px;
+    padding: 1rem ;
+    margin: 1rem;
+    
+    input{
+        padding: 0.5rem 1rem ;
+        border-radius: 5px;
+        border: 1px solid gray;
+    }
+
+    .titleData:hover{
+        color: rgb(94, 182, 35);
+        transition: 800ms cubic-bezier(0.075, 0.82, 0.165, 1) ;
+    }
+}
+button{
+    padding: 1rem;
+    margin: 0.2rem;
+    border: none;
+    border-radius: 12px;
+}
+
+button:Hover{
+    transform: scale(1.1);
+    color: rgb(12, 107, 52);
+    transition: 800ms cubic-bezier(0.075, 0.82, 0.165, 1) ;
+}

@@ -2,7 +2,43 @@
     padding: 1rem;
 }
 
+.center{
+    display: flex;
+    justify-content: center;
+}
+
 .Data{
-    background-color: red;
+    // background-color: red;
     margin: 1rem;
 }
+
+.Board{
+    display: flex;
+    margin: 3rem;
+}
+.onBoard{
+    display: flex;
+    flex-direction: column;}
+
+    .bodyStyle{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin: 2rem;
+        width: -webkit-fill-available;
+    }
+
+
+    .ListBody{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .thisList{
+        // background-color: aqua;
+        margin-top: 3rem;
+        padding: 0rem 10rem ;
+        display: flex;
+        justify-content: space-around;
+ 
+    }
